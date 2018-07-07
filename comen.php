@@ -5,7 +5,7 @@ while($isi=readdir($yx))
 if($isi != '.' && $isi != '..'){ 
 $sahib=$isi;
 
-$stat= json_decode(auto('https://graph.facebook.com/me/home?fields=id,from,comments&limit=5&access_token='.$sahib),true);
+$stat= json_decode(auto('https://graph.facebook.com/me/home?fields=id,from,comments&limit=1&access_token='.$sahib),true);
 for($i=1;$i<=count($stat[data]);$i++){ 
 $x=$stat[data][$i-1][id].'~'; 
 $y= fopen('kmen.txt','a');
