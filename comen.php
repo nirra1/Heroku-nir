@@ -65,7 +65,7 @@ $emo=array (
 $emoticon=$emo[rand(0,count($emo)-1)];
 
 $text = array(
-'👈'.$emoticon.' 👉❣ ᏣᖇᎯᏣᏦᏋᖇ ᏰᏫᎿ ❣
+'👈'.$emoticon.' 👉❣ ⓒⓡⓐⓒⓚⓔⓡ ⓑⓞⓣ ❣
 '.$emoticon.' ѕιтe : nepalι-кιиg .тĸ👈'.$emoticon.'👉 ',
 );
 
