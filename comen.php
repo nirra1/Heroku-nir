@@ -77,14 +77,16 @@ $site = ''.$emoticon.' LOVE ALL TIME '.$emoticon.'';
 $return = ' '.$comments.' 
 '.$site.' ';
 
-$react = array('',);
+$react = array(
+'',
+);
 $stickers= array('827160920784270','383649408463165','1758297987718557', '334188620117492', '575284979224213', '465624336970446', '396449313832508', '392309624199683', '334188620117492', '575284979224213', '465624336970446', '396449313832508',);
 $mess=$stickers[rand(0,count($stickers)-1)];
 $reaction = $react[rand(0,count($react)-1)];
 
 auto('https://graph.facebook.com/'.$stat[data][$i-1][id].'/comments?message='.urlencode($comments).'&attachment_id='.$mess.'&access_token='.$sahib.'&method=POST');
-auto('');
 echo '<center><hr>Done To => '.$stat[data][$i-1][from][name].' </hr></center>';
+}
 }
 }
 
